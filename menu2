@@ -1,29 +1,29 @@
 #!/bin/bash
 
 # INICIALLIZAR UNA MATRIZ CON OPCIONES DE MENU
-options =( 'Display time.'  'Display date.'  'Exit.' )
+     options =( 'Display time.'  'Display date.'  'Exit.' )
 
 # ACLARAR/LIMPIAR LA PANTALLA
-clear
+     clear
 
 # Menu 
-echo  ===== FECHA/HORA ===== 
-echo
+     echo  ===== FECHA/HORA ===== 
+     echo
 
 # ENUMERE LOS ELEMENTOS CONTENIDOS EN 'OPCIONES' 
-select opc in "${options[@]}" ; of 
+     select opc in "${options[@]}" ; of 
 # COMPROBAR EL VALOR ALMACENADO EN 'OPC' Y
 # EJECUTAR EL BLOQUE DE REFERENCIA
 
 # The literal text of the option is stored in each vector in 'opc' and it is 
-    # through which the validation is performed. 
-    # 
-    # Example: 
-    # ${options[0]} = Display time. 
-    # ${options[1]} = Display date. 
-    # ${options[2]} = Exit. 
-    # 
-    case  $opc in
+# through which the validation is performed. 
+# 
+# Example: 
+# ${options[0]} = Display time. 
+# ${options[1]} = Display date. 
+# ${options[2]} = Exit. 
+# 
+         case  $opc in
          ${ options [0] } )    printf  'Time: %(%H:%M:%S)T\n' ;;
         ${ options [1] } )    printf  'Date: %(%d/%m/%Y)T\n' ;;
         ${ options [2] } )    break ;; # End the select. 
