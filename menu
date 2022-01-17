@@ -9,8 +9,8 @@
     echo ===== FECHA/HORA =====
     echo
     echo '1) Mostrar Hora'
-    echo '2) Exibir data.'
-    echo '3) Sair.'
+    echo '2) Mostrar Fecha'
+    echo '3) Salir'
 
  # LEA SOLO EL PRIMER CARACTER ESCRITO
     read -n1 -p 'Opcion: ' opc
@@ -25,7 +25,7 @@
         *)  echo 'OPCION INVALIDA !!'
     esac
 
-    read -p 'Pressione qualquer tecla para volver...'
+    read -p 'Pressione cualquer tecla para volver...'
 done
 
 echo 'Saliendo...'
