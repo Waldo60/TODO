@@ -2,6 +2,7 @@
 
 # BUCLE INFINITO
     while :; do
+    
 # LIMPIAR PANTALLA
     clear
 
