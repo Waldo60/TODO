@@ -7,8 +7,8 @@
     clear
 
  # MENU
-    echo ===== FECHA/HORA =====
-    echo
+    echo -e "\033[1;31m ===== FECHA/HORA ====="
+    echo -e "\033[1;32m"
     echo '1) Mostrar Hora'
     echo '2) Mostrar Fecha'
     echo '3) Salir'
