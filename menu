@@ -8,7 +8,9 @@ A='\033[1;33m'
 B='\033[1;34m'
 L='\033[1;35m'
 C='\033[1;36m'
+W='\033[1;37m'
 IP=$(wget -qO- ipv4.icanhazip.com)
+Cr='creditos: By WOLI0101'
 # BUCLE INFINITO
     while :; do
 
@@ -21,7 +23,8 @@ IP=$(wget -qO- ipv4.icanhazip.com)
     echo -e "$B 1. Mostrar Hora"
     echo -e "$L 2. Mostrar Fecha"
     echo -e "$C 3. Mostrar Ip"
-    echo -e "$A 4. Salir"
+    echo -e "$A 4. Mostrar Creditos"
+    echo -e "$W 5. Salir"
     echo -e "$P"
  # LEA SOLO EL PRIMER CARACTER ESCRITO
     read -n1 -p "Opcion: " opc
@@ -33,7 +36,8 @@ IP=$(wget -qO- ipv4.icanhazip.com)
         1)  printf 'Hora: %(%r)T\n';;
         2)  printf 'Fecha: %(%d/%m/%Y)T\n';;
         3)  printf "Ip: ($IP)\n";; 
-        4)  break;; # ROMPE EL BUCLE Y FINALIZA LA VIZUALISACION DEL MENU
+        4)  printf "Credts: ($Cr)\n;;
+        5)  break;; # ROMPE EL BUCLE Y FINALIZA LA VIZUALISACION DEL MENU
         *)  echo 'OPCION INVALIDA !!'
     esac
 
