@@ -1,22 +1,21 @@
 #!/bin/bash
 
-# Initialize an array with menu options. 
+# INICIALLIZAR UNA MATRIZ CON OPCIONES DE MENU
 options =( 'Display time.'  'Display date.'  'Exit.' )
 
-# clear the screen
+# ACLARAR/LIMPIAR LA PANTALLA
 clear
 
 # Menu 
-echo  ===== DATE/TIME ===== 
+echo  ===== FECHA/HORA ===== 
 echo
 
-# List the elements contained in 'options'. 
-select opc in "${options[@]}" ; of
+# ENUMERE LOS ELEMENTOS CONTENIDOS EN 'OPCIONES' 
+select opc in "${options[@]}" ; of 
+# COMPROBAR EL VALOR ALMACENADO EN 'OPC' Y
+# EJECUTAR EL BLOQUE DE REFERENCIA
 
-    # Check the value stored in 'opc' and 
-    # execute the referring block.
-
-    # The literal text of the option is stored in each vector in 'opc' and it is 
+# The literal text of the option is stored in each vector in 'opc' and it is 
     # through which the validation is performed. 
     # 
     # Example: 
