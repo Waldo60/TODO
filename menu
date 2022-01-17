@@ -1,31 +1,31 @@
 #!/bin/bash
 
-# Loop infinito.
+# BUCLE INFINITO
     while :; do
-    # limpa a tela
+# LIMPIAR PANTALLA
     clear
 
- # Menu
+ # MENU
     echo ===== DATA/HORA =====
     echo
     echo '1) Exibir hora.'
     echo '2) Exibir data.'
     echo '3) Sair.'
 
- # Lê somente o primeiro caractere digitado.
+ # LEA SOLO EL PRIMER CARACTER ESCRITO
     read -n1 -p 'Opção: ' opc
     echo
 
- # Verifica o valor armazenado em 'opc' e
- # executa o bloco referente.
+ # COMPROBAR EL VALOR ALMACENADO EN 'OPC' Y
+ # EJECUTAR EL BLOQUE DE REFERENCIA
     case $opc in
         1)  printf 'Hora: %(%H:%M:%S)T\n';;
         2)  printf 'Data: %(%d/%m/%Y)T\n';;
-        3)  break;; # Interrompe o loop e finaliza a exibição do menu.
-        *)  echo 'OPÇÃO INVÁLIDA !!'
+        3)  break;; # ROMPE EL BUCLE Y FINALIZA LA VIZUALISACION DEL MENU
+        *)  echo 'OPCION INVALIDA !!'
     esac
 
-    read -p 'Pressione qualquer tecla para voltar...'
+    read -p 'Pressione qualquer tecla para volver...'
 done
 
-echo 'Saindo...'
+echo 'Saliendo...'
