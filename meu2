@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Inicializa um array com as opções do menu.
+opcoes=('Exibir hora.' 'Exibir data.' 'Sair.')
+
+# limpa a tela
+clear
+
+# Menu
+echo ===== DATA/HORA =====
+echo
+
+# Lista os elementos contidos em 'opcoes'.
+select opc in "${opcoes[@]}"; do
+
+    # Verifica o valor armazenado em 'opc' e
+    # executa o bloco referente.
+
+    # Fica armazenado em cada vetor em 'opc' o texto literal da opção e é
+    # através do qual é feito a validação.
+    #
+    # Exemplo:
+    #   ${opcoes[0]} = Exibir hora.
+    #   ${opcoes[1]} = Exibir data.
+    #   ${opcoes[2]} = Sair.
+    #
+    case $opc in
+        ${opcoes[0]})   printf 'Hora: %(%H:%M:%S)T\n';;
+        ${opcoes[1]})   printf 'Data: %(%d/%m/%Y)T\n';;
+        ${opcoes[2]})   break;; # Finaliza o select.
+        *)  echo 'OPÇÃO INVÁLIDA !!'
+    esac
+
+    read -p 'Pressione qualquer tecla para voltar...'
+done
+
+echo 'Saindo...'
