@@ -24,7 +24,7 @@
         2)  printf 'Fecha: %(%d/%m/%Y)T\n';;
         3)  break;; # ROMPE EL BUCLE Y FINALIZA LA VIZUALISACION DEL MENU
         *)  echo 'OPCION INVALIDA !!'
-    esac
+    exit
 
     read -p 'Pressione enter para volver...'
 done
