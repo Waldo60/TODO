@@ -131,4 +131,3 @@ read -p "SELECT OPTION :" opc
 tput cuu1
 tput dl1
 done
-case $opc in
