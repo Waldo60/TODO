@@ -1,5 +1,5 @@
 #!/bin/bash
-#  Author: Woli Lopez
+#  Author: W L
 #  Fecha: 16/01/2022
 #  Funcion: Crear menu basico
 #COLORES
@@ -12,7 +12,7 @@ L='\033[1;35m'
 C='\033[1;36m'
 W='\033[1;37m'
 IP=$(wget -qO- ipv4.icanhazip.com)
-Cr='creditos: By WOLI0101'
+Cr='creditos: By 0101'
 # BUCLE INFINITO
     while :; do
 
