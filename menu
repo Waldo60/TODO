@@ -2,7 +2,7 @@
 #  Author: W L
 #  Fecha: 16/01/2022
 #  Funcion: Crear menu basico
-#COLORES
+                              # COLORES #
 P='\033[1;30m'
 R='\033[1;31m'
 V='\033[1;32m'
@@ -13,13 +13,13 @@ C='\033[1;36m'
 W='\033[1;37m'
 IP=$(wget -qO- ipv4.icanhazip.com)
 Cr='creditos: By 0101'
-# BUCLE INFINITO
+                               # BUCLE INFINITO #
     while :; do
 
-# LIMPIAR PANTALLA
+                               # LIMPIAR PANTALLA #
     clear 
 
- # MEN7U7
+                               # MENU1 UWU #
     echo -e "$R ===== FECHA/HORA ====="
     echo
     echo -e "$B 1. Mostrar Hora"
@@ -28,12 +28,12 @@ Cr='creditos: By 0101'
     echo -e "$A 4. Mostrar Creditos"
     echo -e "$W 5. Salir"
     echo -e "$P"
- # LEA SOLO EL PRIMER CARACTER ESCRITO
+                               # LEA SOLO EL PRIMER CARACTER ESCRITO #
     read -n1 -p "Opcion: " opc
     echo -ne "$V"
 
- # COMPROBAR EL VALOR ALMACENADO EN 'OPC' Y
- # EJECUTAR EL BLOQUE DE REFERENCIA
+                               # COMPROBAR EL VALOR ALMACENADO EN 'OPC' Y #
+                               # EJECUTAR EL BLOQUE DE REFERENCIA #
     case $opc in
         1)  printf 'Hora: %(%r)T\n';;
         2)  printf 'Fecha: %(%d/%m/%Y)T\n';;
